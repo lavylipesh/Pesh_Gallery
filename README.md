@@ -30,3 +30,7 @@ This is a Python application about my gallery.The application displays different
 
 ## Contact Information
 If you wish to get more information on my projects please contact me at beth13lilib@gmail.com
+
+## Licence Information
+[MIT LICENCE]()
+Copyright (c) 2019 **Lilibeth Langat**
