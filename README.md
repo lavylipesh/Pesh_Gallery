@@ -28,3 +28,5 @@ This is a Python application about my gallery.The application displays different
 * Postgresql **for database**
 * Heroku **deployment**
 
+## Contact Information
+If you wish to get more information on my projects please contact me at beth13lilib@gmail.com
