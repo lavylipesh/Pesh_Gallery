@@ -7,6 +7,15 @@ This is a Python application about my gallery.The application displays different
 
 ## Installation Instruction
 * install python3.6
-* activate the virtual environment
+* activate the virtual environment {python3.6 -m venv --without pip install virtual}
 * install pip
 * pip install django==1.11
+## Set-Up Instructions
+* Open Terminal {Ctrl+Shift+T}
+
+* git clone https://github.com/lavylipesh/Pesh_Gallery.git
+
+
+* cd Pesh_Gallery
+
+* code . atom . based on the text editor you have.
