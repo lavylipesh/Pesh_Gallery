@@ -19,6 +19,14 @@ This is a Python application about my gallery.The application displays different
 * cd Pesh_Gallery
 
 * code . atom . based on the text editor you have.
+
+## User stories
+**A user is able to:**
+1. View different photos of their interest.
+2. Click on a single photo to expand it and also view the details of the photo. 
+3. Search for different categories of photos. 
+4. Copy a link to the photo to share with friends and family.
+5. View photos based on the location they were taken.
 ## Known Bugs
 
 
