@@ -19,3 +19,12 @@ This is a Python application about my gallery.The application displays different
 * cd Pesh_Gallery
 
 * code . atom . based on the text editor you have.
+## Known Bugs
+
+
+## Technologies Used
+* Python3.6
+* Django == 1.11 **as framework for python**
+* Postgresql **for database**
+* Heroku **deployment**
+
