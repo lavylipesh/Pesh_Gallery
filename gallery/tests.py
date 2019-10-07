@@ -8,9 +8,10 @@ class CategoryTestClass(TestCase):
     def test_instance(self):
         self.assertTrue(isinstance(self.animation,Category))
     def test_save_method(self):
-        self.animations.save_category()
+        self.animation.save_category()
         categories = Category.objects.all()
-        self.assertTrue(len(editors) > 0)       
+        self.assertTrue(len(categories) > 0)
+
 
 
 
