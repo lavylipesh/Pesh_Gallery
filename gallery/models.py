@@ -14,10 +14,9 @@ class Location(models.Model):
         return self.name 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to 'static/')
-    name = models.CharField(max_length = 60)
+    image = models.ImageField
+    image_name = models.CharField(max_length = 60)
+    image_description = models.CharField(max_length=60)
     location = models.ForeignKey(Location)
     category = models.ForeignKey(Category)
-    pub_date = models.DateTimeField(auto_now_add=True)
-
     
