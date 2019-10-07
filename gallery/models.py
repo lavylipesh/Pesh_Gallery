@@ -20,7 +20,7 @@ class Location(models.Model):
         return self.name 
 
 class Image(models.Model):
-    image = models.ImageField
+    image = models.ImageField(upload_to = 'categories/')
     image_name = models.CharField(max_length = 60)
     image_description = models.CharField(max_length=60)
     location = models.ForeignKey(Location)
