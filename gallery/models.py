@@ -8,6 +8,10 @@ class Category(models.Model):
         return self.name
     def save_category(self):
         self.save()
+    @classmethod
+    def search_by_name(cls,search_term):
+        category = cls.object.filter(title_icontains = search_term)
+        return category
 
 class Location(models.Model):
     name = models.CharField(max_length = 30)
