@@ -5,13 +5,17 @@ class CategoryTestClass(TestCase):
     # Set up method
     def setUp(self):
         self.animation= Category(name = 'Animatons')
+   
+   
     def test_instance(self):
         self.assertTrue(isinstance(self.animation,Category))
+    
+    
     def test_save_method(self):
         self.animation.save_category()
         categories = Category.objects.all()
         self.assertTrue(len(categories) > 0)
-
+    
 
 
 
