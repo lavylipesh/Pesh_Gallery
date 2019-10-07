@@ -5,7 +5,11 @@ from .models import Image
 
 def index(request):
     images = Image.objects.all()
+    
+
     return render(request,'index.html',{'images':images})
+
+
 
 def search_results(request):
 
@@ -14,11 +18,11 @@ def search_results(request):
         searched_categories = Image.search_by_category(search_term)
         message = f"{search_term}"
 
-        return render(request, 'all-photos/search.html',{"message":message,"categories": searched_categories})
+        return render(request, 'all_photos/search.html',{"message":message,"categories": searched_categories})
 
     else:
         message = "You haven't searched for any term"
-        return render(request, 'all-photos/search.html',{"message":message})
+        return render(request, 'all_photos/search.html',{"message":message})
 
 def category(request,category_id):
     try:

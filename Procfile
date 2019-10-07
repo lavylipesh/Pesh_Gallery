@@ -1,0 +1,1 @@
+web: gunicorn peshgallery.wsgi --log-file - 
