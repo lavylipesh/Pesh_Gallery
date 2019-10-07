@@ -1,0 +1,25 @@
+{%extends 'all-photos/base.html'%}
+
+ {% block content %}
+
+ <div class="container">
+
+   <div class="row">
+     <img src="{{category.image.url}}"  class="img-responsive" alt="">
+   </div>
+
+   <div class="row">
+     <h1 class="text-center">{{category.name}}</h1>
+   </div>
+
+   <div class="row">
+     <p>{{category.post}}</p>
+   </div>
+
+   <div class="row">
+     <p>Posted {{category.pub_date|timesince}} by {{category.name}}</p>
+   </div>
+
+ </div>
+
+ {% endblock %}
