@@ -5,12 +5,14 @@
 This is a Python application about my gallery.The application displays different photos from different categories.Photos are also categorised by the location they were taken.A user is able to copy a photograph link in the application
 ## Screenshot
  <img src="https://github.com/lavylipesh/Pesh_Gallery/blob/master/static/photos/gallery.png" width="1000">
-## Installation Instruction
+
+# Installation Instruction
 * install python3.6
 * activate the virtual environment {python3.6 -m venv --without pip install virtual}
 * install pip
 * pip install django==1.11
-## Set-Up Instructions
+
+# Set-Up Instructions
 * Open Terminal {Ctrl+Shift+T}
 
 * git clone https://github.com/lavylipesh/Pesh_Gallery.git
