@@ -21,6 +21,7 @@ This is a Python application about my gallery.The application displays different
 * cd Pesh_Gallery
 
 * ```code .``` or ```atom .``` based on the text editor you have.
+* ```pip install -r requirements.txt```
 
 # User stories
 **A user is able to:**
