@@ -7,20 +7,20 @@ This is a Python application about my gallery.The application displays different
  <img src="https://github.com/lavylipesh/Pesh_Gallery/blob/master/static/photos/gallery.png" width="1000">
 
 # Installation Instruction
-* install python3.6
-* activate the virtual environment {python3.6 -m venv --without pip install virtual}
 * install pip
+* install python3.6 ```pip install python3```
+* activate the virtual environment ```python3.6 -m venv --without pip install virtual```
 * pip install django==1.11
 
 # Set-Up Instructions
 * Open Terminal {Ctrl+Shift+T}
 
-* git clone https://github.com/lavylipesh/Pesh_Gallery.git
+* git clone into my application: ```git clone https://github.com/lavylipesh/Pesh_Gallery.git```
 
 
 * cd Pesh_Gallery
 
-* code . atom . based on the text editor you have.
+* ```code .``` or ```atom .``` based on the text editor you have.
 
 # User stories
 **A user is able to:**
