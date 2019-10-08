@@ -11,13 +11,10 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-
 import dj_database_url  
 import django_heroku  
 from decouple import config, Csv  
-from dotenv import load_dotenv  
-  
-load_dotenv()
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -30,9 +27,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =  config('DEBUG', default=False, cast=bool)
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.localhost', '.herokuapp.com', '.127.0.0.1']
 
 
 # Application definition
@@ -85,16 +82,9 @@ WSGI_APPLICATION = 'peshgallery.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',  
-        'NAME': config('DB_NAME'),  
-        'USER': config('DB_USER'),  
-        'PASSWORD': config('DB_PASSWORD'),  
-        'HOST': config('DB_HOST'),  
-    }
-    db_env = dj_database_url.config(conn_max_age=500)  
-    DATABASES['default'].update(db_env)  
-    ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+    'default': dj_database_url.config(
+    default=config('DATABASE_URL')
+    )
 }
 
 
@@ -137,9 +127,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),
+]
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # configuring the location for media
 MEDIA_URL = '/media/'
