@@ -28,8 +28,9 @@ This is a Python application about my gallery.The application displays different
 4. Copy a link to the photo to share with friends and family.
 5. View photos based on the location they were taken.
 ## Known Bugs
-
+A user is unable to search photos by location
 ## Tests
+All test written for the application are passing.
 
 ## Technologies Used
 * Python3.6
