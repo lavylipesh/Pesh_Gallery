@@ -1,9 +1,9 @@
-## Pesh_Gallery
-## Author
+# Pesh_Gallery
+# Author
 [Lilibeth Langat](https://github.com/lavylipesh/Pesh_Gallery)
-## Description
+# Description
 This is a Python application about my gallery.The application displays different photos from different categories.Photos are also categorised by the location they were taken.A user is able to copy a photograph link in the application
-## Screenshot
+# Screenshot
  <img src="https://github.com/lavylipesh/Pesh_Gallery/blob/master/static/photos/gallery.png" width="1000">
 
 # Installation Instruction
@@ -22,27 +22,27 @@ This is a Python application about my gallery.The application displays different
 
 * code . atom . based on the text editor you have.
 
-## User stories
+# User stories
 **A user is able to:**
 1. View different photos of their interest.
 2. Click on a single photo to expand it and also view the details of the photo. 
 3. Search for different categories of photos. 
 4. Copy a link to the photo to share with friends and family.
 5. View photos based on the location they were taken.
-## Known Bugs
+# Known Bugs
 A user is unable to search photos by location
-## Tests
+# Tests
 All test written for the application are passing.
 
-## Technologies Used
+# Technologies Used
 * Python3.6
 * Django == 1.11 **as framework for python**
 * Postgresql **for database**
 * Heroku **deployment**
 
-## Contact Information
+# Contact Information
 If you wish to get more information on my projects please contact me at beth13lilib@gmail.com
 
-## Licence Information
+# Licence Information
 [MIT LICENCE](https://github.com/lavylipesh/Pesh_Gallery/blob/master/LICENCE)
 Copyright (c) 2019 **Lilibeth Langat**
